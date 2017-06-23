@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-strict-di>
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+      <!-- Material icons font hosted by Google -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/css/bundle.css?v=1.0">
+  </head>
+  <body>
+      <div column="root-container" layout="column" layout-fill>
+      <div ng-include="'./assets/partials/appbar.view.html'"></div>
+      <md-content flex md-colors="{background: 'grey-200'}">
+          <div ng-view class="root-container view-fade" ></div>
+      </md-content>
+    </div>
+    <script src="assets/js/bundle.js"></script>
+  </body>
+</html>

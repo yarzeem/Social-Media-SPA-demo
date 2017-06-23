@@ -1,0 +1,9 @@
+{
+  "result" : "success",
+  "response" : {
+    "userId" : 1,
+    "email" : "test@mail.com",
+    "firstName" : "Mike",
+    "lastName" : "Tester"
+  }
+}

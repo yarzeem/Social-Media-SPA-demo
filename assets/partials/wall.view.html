@@ -1,0 +1,142 @@
+<div ng-controller="wallController as wctrl">
+    <div
+        flex-xs="100"
+        flex-gt-xs="70"
+        flex-gt-md="50"
+        flex-offset-gt-xs="15"
+        flex-offset-gt-md="25"
+        layout="column">
+        <div
+            ng-repeat="item in wctrl.content"
+            flex-xs="100"
+            inlineStyle="position:relative;">
+            <md-card>
+                <md-card-header layout="row" layout-xs="column" layout-align-xs="center center">
+                    <div layout="row" flex="35">
+                        <md-card-avatar>
+                            <md-icon class="material-icons">account_circle</md-icon>
+                        </md-card-avatar>
+                        <md-card-header-text >
+                            <span class="md-title">John</span>
+                            <span class="md-subhead">Tester</span>
+                        </md-card-header-text>
+                    </div>
+                    <div flex layout="row" layout-align="end center">
+                        <md-button
+                            ng-disabled="item.vote == reaction"
+                            ng-show="!item.vote || item.vote == reaction"
+                            ng-click="wctrl.vote(item.contentId, reaction)"
+                            ng-repeat="reaction in wctrl.reactions"
+                            aria-label="Add Group"
+                            class="md-icon-button md-mini md-primary md-raised animate-show">
+                            <md-icon class="material-icons">
+                                {{reaction}}
+                            </md-icon>
+                        </md-button>
+                    </div>
+                </md-card-header>
+                <iframe
+                    ng-show="item.assetType == 'video'"
+                    width="100%"
+                    height="500px"
+                    src="{{item.assetUrl}}"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+                <img
+                    ng-show="item.assetType == 'image'"
+                    ng-src="{{item.assetUrl}}"
+                    class="md-card-image"
+                    alt="Washed Out">
+                <md-card-content>
+                    <p>
+                        {{item.shortDesciption}}
+                    </p>
+                </md-card-content>
+                <!-- comments -->
+                <md-card-actions
+                    ng-show="item.comments === undefined">
+                    <md-button
+                        ng-click="wctrl.loadComments(item.contentId)"
+                        class="md-warn"
+                        style="width: 100%">
+                        <md-icon class="material-icons">comment</md-icon>
+                    </md-button>
+                </md-card-actions>
+                <md-card-footer
+                    class="comments-fade wall-content-comments"
+                    ng-show="item.comments !== undefined">
+                    <md-list>
+                        <md-list-item
+                            class="md-2-line md-long-text"
+                            ng-repeat="comment in item.comments">
+                            <img
+                                ng-src="{{comment.author.avatar}}"
+                                class="md-avatar"
+                                alt="{{comment.author.firstName + ' ' + comment.author.lastName}}"/>
+                            <div
+                                class="md-list-item-text comment-content" >
+                                <!-- md-colors="{background:'primary'}"-->
+                                <span class="name">
+                                    {{comment.author.firstName + ' ' + comment.author.lastName}}
+                                </span>
+                                <span>
+                                    {{comment.datetime}}
+                                </span>
+                                <p>
+                                    {{comment.text}}
+                                </p>
+                                <md-list>
+                                    <md-list-item class="md-2-line md-long-text" ng-repeat="innerComment in comment.comments">
+                                        <img
+                                            ng-src="{{innerComment.author.avatar}}"
+                                            class="md-avatar"
+                                            alt="{{item.who}}">
+                                        <div class="md-list-item-text" >
+                                            <span class="name">
+                                                {{innerComment.author.firstName + ' ' + innerComment.author.lastName}}
+                                            </span>
+                                            <span>
+                                                {{innerComment.datetime}}
+                                            </span>
+                                            <p>
+                                                {{innerComment.text}}
+                                            </p>
+                                        </div>
+                                    </md-list-item>
+                                </md-list>
+                                <div layout="row" layout-align="center center">
+                                    <md-input-container flex>
+                                        <input
+                                            type="text"
+                                            ng-model="wctrl.reply"
+                                            placeholder="Reply to {{comment.author.firstName + ' ' + comment.author.lastName}}">
+                                    </md-input-container>
+                                    <md-button class="md-icon-button md-button md-raised">
+                                        <md-icon class="material-icons">send</md-icon>
+                                    </md-button>
+                                </div>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                    <div layout="row" layout-align="center center">
+                        <md-input-container flex>
+                            <input
+                                type="text"
+                                ng-model="wctrl.asdasd"
+                                placeholder="Comment post"/>
+                        </md-input-container>
+                        <md-button class="md-icon-button md-button md-raised">
+                            <md-icon class="material-icons">send</md-icon>
+                        </md-button>
+                    </div>
+                </md-card-footer>
+            </md-card>
+        </div>
+    </div>
+    <div layout="row" layout-align="center center">
+        <div flex>
+            <md-progress-linear md-mode="indeterminate" in-view="wctrl.loadContent()"></md-progress-linear>
+        </div>
+    </div>
+</div>

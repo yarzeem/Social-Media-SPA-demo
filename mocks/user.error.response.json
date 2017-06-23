@@ -1,0 +1,7 @@
+{
+  "result" : "error",
+  "response" : {
+    "errorCode" : 1,
+    "errorMessage" : "User does not exists"
+  }
+}

@@ -1,0 +1,31 @@
+<div class="login-view" ng-controller="loginController as lctrl">
+  <div class="positioner" layout="row" layout-align="center center">
+    <div>
+      <form name="loginForm" ng-submit="lctrl.submit()">
+        <md-card>
+          <md-card-header>
+            <md-card-header-text>
+              <span class="md-title">Welcome!</span>
+              <span class="md-subhead">In a demonstration version of Social Media single page application. To sign in, use TEST USER button first.</span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <md-input-container>
+              <label>Email</label>
+              <input type="email" ng-model="lctrl.email" required>
+            </md-input-container>
+            <md-input-container>
+              <label>Password</label>
+              <input type="password" ng-model="lctrl.password" required>
+            </md-input-container>
+         </md-card-content>
+         <md-card-actions layout="row" layout-align="end center">
+           <md-button ng-disabled="!loginForm.$valid" type="submit" class="md-primary">Sign In</md-button>
+           <md-button type="button" ng-click="lctrl.assignTestUser()" class="md-accent">Test User</md-button>
+           <md-button type="button" ng-click="lctrl.resetUser()" class="md-accent">Reset</md-button>
+         </md-card-actions>
+        </md-card>
+      </form>
+    </div>
+  </div>
+</div>

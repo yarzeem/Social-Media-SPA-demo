@@ -1,0 +1,61 @@
+{
+    "result": "success",
+    "response": [
+        {
+            "title": "Lorem ipsum dolor sit amet!",
+            "shortDesciption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget bibendum quam. Proin ac varius nisi. Sed et sapien quis nisi convallis varius. Suspendisse viverra bibendum tellus, nec mattis mi blandit eu. Quisque pharetra magna in ex pulvinar, a aliquam dolor lacinia. Donec venenatis quis lectus vel dignissim. Sed vel metus libero. Donec turpis lacus, pharetra et nulla non, facilisis faucibus erat. Praesent felis lorem, lobortis non vulputate sit amet, interdum eu neque. Nulla accumsan, diam id tempus feugiat, tellus lorem tristique leo, sit amet auctor dui diam eu quam. Aenean efficitur diam sit amet cursus porta. Duis cursus, tortor eget eleifend sollicitudin, sapien enim vestibulum nulla, eu ultricies enim orci id lectus.",
+            "assetUrl": "https://www.youtube.com/embed/0HDdjwpPM3Y",
+            "assetType": "video",
+            "vote": false
+        },
+        {
+            "title": "Proin leo odio... aliquam eget condimentum vitae!",
+            "shortDesciption": "Proin leo odio, aliquam eget condimentum vitae, vulputate ut diam. Proin pulvinar tortor tincidunt massa accumsan, sed ullamcorper dolor laoreet. Nulla eu odio vel nibh dignissim viverra. Quisque a risus a orci porta luctus sit amet vitae sapien. Praesent orci est, dapibus lobortis laoreet vitae, luctus eu urna. Nunc odio velit, bibendum in bibendum a, efficitur euismod sapien. Sed nec pharetra dui. Praesent id ornare justo.",
+            "assetUrl": "./assets/image/seagirl.jpg",
+            "assetType": "image",
+            "vote": false
+        },
+        {
+            "title": "Sed ut ex congue!",
+            "shortDesciption": "Sed ut ex congue, euismod turpis id, cursus neque. Proin ornare lectus libero, volutpat ullamcorper ipsum facilisis nec. Etiam vestibulum ex ut nisi sodales dapibus. Cras consectetur massa ipsum, in mollis nulla venenatis et. In eleifend elit neque, quis porta felis fermentum a. In quis tortor viverra, iaculis urna vitae, feugiat dui. Proin maximus justo id quam mattis feugiat. Donec eros nulla, vulputate vel enim a, ullamcorper pharetra eros. Etiam euismod ac tortor in tempor. Aliquam venenatis, neque vitae aliquam convallis, turpis metus tempus purus, in ullamcorper justo massa eget eros. Mauris lobortis enim ac tortor tempor ullamcorper. Phasellus urna mauris, dapibus vel congue eget, placerat in mi. Morbi nec ex vel nisl lacinia interdum in et mauris.",
+            "assetUrl": "./assets/image/show.jpg",
+            "assetType": "image",
+            "vote": false
+        },
+        {
+            "title": "Suspendisse consectetur lorem non orci lacinia posuere.",
+            "shortDesciption": "Suspendisse consectetur lorem non orci lacinia posuere. Vestibulum consectetur venenatis diam ac aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec elementum erat, in finibus urna. Sed id eleifend enim. In malesuada convallis ipsum, nec auctor nisi iaculis id. Donec tincidunt maximus nunc sed mollis. Suspendisse interdum, erat eget luctus tempor, sapien lacus elementum ante, ut feugiat est velit et augue. Nunc at vulputate risus, vitae cursus turpis. Phasellus mauris purus, lacinia eu pretium eu, facilisis vitae sem. Aenean malesuada ligula sit amet diam mollis sagittis in eu magna. Aliquam eget odio sit amet erat consectetur cursus.",
+            "assetUrl": "./assets/image/forestgirl.jpg",
+            "assetType": "image",
+            "vote": false
+        },
+        {
+            "title": "Suspendisse consectetur lorem non orci lacinia posuere.",
+            "shortDesciption": "Suspendisse consectetur lorem non orci lacinia posuere. Vestibulum consectetur venenatis diam ac aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec elementum erat, in finibus urna. Sed id eleifend enim. In malesuada convallis ipsum, nec auctor nisi iaculis id. Donec tincidunt maximus nunc sed mollis. Suspendisse interdum, erat eget luctus tempor, sapien lacus elementum ante, ut feugiat est velit et augue. Nunc at vulputate risus, vitae cursus turpis. Phasellus mauris purus, lacinia eu pretium eu, facilisis vitae sem. Aenean malesuada ligula sit amet diam mollis sagittis in eu magna. Aliquam eget odio sit amet erat consectetur cursus.",
+            "assetUrl": "https://www.youtube.com/embed/V38psI8WIvI",
+            "assetType": "video",
+            "vote": false
+        },
+        {
+            "title": "Suspendisse consectetur lorem non orci lacinia posuere.",
+            "shortDesciption": "Suspendisse consectetur lorem non orci lacinia posuere. Vestibulum consectetur venenatis diam ac aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec elementum erat, in finibus urna. Sed id eleifend enim. In malesuada convallis ipsum, nec auctor nisi iaculis id. Donec tincidunt maximus nunc sed mollis. Suspendisse interdum, erat eget luctus tempor, sapien lacus elementum ante, ut feugiat est velit et augue. Nunc at vulputate risus, vitae cursus turpis. Phasellus mauris purus, lacinia eu pretium eu, facilisis vitae sem. Aenean malesuada ligula sit amet diam mollis sagittis in eu magna. Aliquam eget odio sit amet erat consectetur cursus.",
+            "assetUrl": "./assets/image/married.jpg",
+            "assetType": "image",
+            "vote": false
+        },
+        {
+            "title": "Suspendisse consectetur lorem non orci lacinia posuere.",
+            "shortDesciption": "Suspendisse consectetur lorem non orci lacinia posuere. Vestibulum consectetur venenatis diam ac aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec elementum erat, in finibus urna. Sed id eleifend enim. In malesuada convallis ipsum, nec auctor nisi iaculis id. Donec tincidunt maximus nunc sed mollis. Suspendisse interdum, erat eget luctus tempor, sapien lacus elementum ante, ut feugiat est velit et augue. Nunc at vulputate risus, vitae cursus turpis. Phasellus mauris purus, lacinia eu pretium eu, facilisis vitae sem. Aenean malesuada ligula sit amet diam mollis sagittis in eu magna. Aliquam eget odio sit amet erat consectetur cursus.",
+            "assetUrl": "./assets/image/skateboard.jpg",
+            "assetType": "image",
+            "vote": false
+        },
+        {
+            "title": "Suspendisse consectetur lorem non orci lacinia posuere.",
+            "shortDesciption": "Suspendisse consectetur lorem non orci lacinia posuere. Vestibulum consectetur venenatis diam ac aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec elementum erat, in finibus urna. Sed id eleifend enim. In malesuada convallis ipsum, nec auctor nisi iaculis id. Donec tincidunt maximus nunc sed mollis. Suspendisse interdum, erat eget luctus tempor, sapien lacus elementum ante, ut feugiat est velit et augue. Nunc at vulputate risus, vitae cursus turpis. Phasellus mauris purus, lacinia eu pretium eu, facilisis vitae sem. Aenean malesuada ligula sit amet diam mollis sagittis in eu magna. Aliquam eget odio sit amet erat consectetur cursus.",
+            "assetUrl": "https://www.youtube.com/embed/nq0mpgHNapc",
+            "assetType": "video",
+            "vote": false
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+<div class="appbar-root" ng-controller="appbarController as appbarCtrl">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <div layout="row" layout-align="center center" layout-fill>
+        <span>SocialMedia SPA</span>
+        <!-- fill up the space between left and right area -->
+        <span flex></span>
+        <div ng-show="appbarCtrl.signedIn()">
+          <div hide-xs ng-show="appbarCtrl.signedIn()">
+            <md-button ng-repeat="item in appbarCtrl.items"
+                       aria-label="{{item.ariaLabel}}"
+                       ng-disabled="appbarCtrl.currentLocation() === item.redirect"
+                       class="md-icon-button"
+                       ng-class="{'md-raised': appbarCtrl.currentLocation() === item.redirect}"
+                       ng-click="item.click()">
+              <md-icon md-font-set="material-icons">{{item.icon}}</md-icon>
+            </md-button>
+          </div>
+          <div show-xs>
+            <md-menu>
+              <md-button ng-click="$mdOpenMenu($event)" class="md-icon-button" hide-gt-xs>
+                <md-icon md-font-set="material-icons">menu</md-icon>
+              </md-button>
+              <md-menu-content class="appbar-menu">
+                <md-menu-item ng-repeat="item in appbarCtrl.items">
+                   <md-button
+                       aria-label="{{item.ariaLabel}}"
+                       ng-disabled="appbarCtrl.currentLocation() === item.redirect"
+                       class="md-icon-button"
+                       ng-class="{'md-raised': appbarCtrl.currentLocation() === item.redirect}"
+                       ng-click="item.click()">
+                    <md-icon md-font-set="material-icons">{{item.icon}}</md-icon>
+                  </md-button>
+                </md-menu-item>
+              </md-menu-content>
+            </md-menu>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-toolbar>
+</div>

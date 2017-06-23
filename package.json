@@ -1,0 +1,36 @@
+{
+  "name": "social-media",
+  "version": "1.0.0",
+  "description": "Social Media web application demo, using AngularJS and Angular Material",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle-js": "browserify src/app.js -t [ babelify ] -p [ minifyify --no-map ] -o assets/js/bundle.js",
+    "build-scss": "node-sass --include-path scss scss/app.scss assets/css/bundle.css",
+    "watch-js": "watchify src/app.js -t [ babelify ] -p [ minifyify --no-map ] -o assets/js/bundle.js",
+    "watch-scss": "nodemon -e scss -x node-sass --include-path scss scss/app.scss assets/css/bundle.css",
+    "server": "lr-http-server",
+    "windows": "start npm run watch-js && start npm run watch-scss && start npm run server"
+  },
+  "author": "Adam Jastrząbek",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "lr-http-server": "^0.1.5",
+    "minifyify": "^7.3.4",
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-animate": "^1.5.9",
+    "angular-aria": "^1.5.9",
+    "angular-cookies": "^1.5.9",
+    "angular-inview": "^2.1.0",
+    "angular-material": "^1.1.1",
+    "angular-route": "^1.5.9",
+    "material-icons": "^0.1.0"
+  }
+}
